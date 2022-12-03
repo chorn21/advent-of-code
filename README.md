@@ -11,7 +11,7 @@ npm i
 ## Run a day's script
 
 ```
-ts-node {YEAR}/{DAY}/{DAY}.ts \\ e.g. 2022/01/01.ts
+npm run day {DAY} // e.g. npm run day 03
 ```
 
 ## Run tests

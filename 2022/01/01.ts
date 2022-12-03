@@ -1,6 +1,3 @@
-import { readFile } from 'fs/promises'
-
-const FILE_LOC = `${__dirname}/input.txt`
 
 function getSums(data: string): number[] {
     return data.split('\n\n') // split sections of numbers
@@ -51,9 +48,7 @@ export function findSumTopThreeCalories(data: string): number { // O(N) where N 
     }
 }
 
-(async () => {
-    const data = await (await readFile(FILE_LOC)).toString('utf-8')
-
+export function runDayOne(data: string) {
     console.log(`Part #1 Answer: ${findMaxCalories(data)}`)
     console.log(`Part #2 Answer: ${findSumTopThreeCalories(data)}`)
-})()
+}

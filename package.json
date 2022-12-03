@@ -2,9 +2,10 @@
   "name": "advent-of-code",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "day": "tsc && node dist/index.js"
   },
   "author": "",
   "license": "ISC",
