@@ -1,6 +1,8 @@
 import { readFile } from 'fs/promises'
+
 import { runDayOne } from './2022/01/01'
 import { runDayTwo } from './2022/02/02'
+import { runDayThree } from './2022/03/03'
 
 (async function() {
     const [,,day] = process.argv;
@@ -14,6 +16,9 @@ import { runDayTwo } from './2022/02/02'
             break
         case '02':
             runDayTwo(data)
+            break
+        case '03':
+            runDayThree(data)
             break
         default:
             console.log('Invalid day param')
